@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-dark-900 relative">
+    <div className="min-h-screen bg-ivory-100 relative">
       <Navbar scrollY={scrollY} />
       <Hero />
       <Benefits />

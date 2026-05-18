@@ -43,23 +43,25 @@ const Testimonials = () => {
   const [active, setActive] = useState(0);
 
   return (
+    /* ── LIGHT section ── */
     <section id="reviews" className="relative py-24 lg:py-32 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #0d0905 0%, #120b03 100%)' }}>
+      style={{ background: 'linear-gradient(180deg, #fdfcf8 0%, #faf7f0 100%)' }}>
 
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl opacity-10 pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #e8880c 0%, transparent 70%)' }} />
+      {/* Warm glow accent */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl opacity-15 pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(200,134,30,0.5) 0%, transparent 70%)' }} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2 badge-premium px-4 py-2 rounded-full text-brand-400 text-xs font-semibold tracking-widest uppercase mb-4">
+          <span className="inline-flex items-center gap-2 badge-premium px-4 py-2 rounded-full text-brand-600 text-xs font-semibold tracking-widest uppercase mb-4">
             ✦ Customer Stories
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-4">
-            <span className="text-white">Real </span>
+            <span className="text-slate-900">Real </span>
             <span className="text-gradient-gold">Reviews</span>
           </h2>
-          <p className="text-brand-200/50 max-w-xl mx-auto text-base leading-relaxed">
+          <p className="text-slate-500 max-w-xl mx-auto text-base leading-relaxed">
             Thousands of happy customers across India have made Herbal Peya their daily ritual.
           </p>
           <div className="divider-gold mt-8 max-w-xs mx-auto" />
@@ -67,33 +69,34 @@ const Testimonials = () => {
 
         {/* Featured Review */}
         <div className="max-w-3xl mx-auto mb-8">
-          <div className="glass-card-warm rounded-3xl p-8 lg:p-10 relative overflow-hidden transition-all duration-500">
-            <div className="absolute top-6 right-8 text-brand-600/20 font-serif text-8xl leading-none pointer-events-none select-none">"</div>
+          <div className="glass-card rounded-3xl p-8 lg:p-10 relative overflow-hidden transition-all duration-500"
+            style={{ boxShadow: '0 12px 48px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04)' }}>
+            <div className="absolute top-6 right-8 text-brand-200/40 font-serif text-8xl leading-none pointer-events-none select-none">"</div>
 
             {/* Stars */}
             <div className="flex gap-1 mb-4">
               {[...Array(reviews[active].rating)].map((_, i) => (
-                <svg key={i} className="w-5 h-5 text-spice-400 fill-current" viewBox="0 0 20 20">
+                <svg key={i} className="w-5 h-5 text-spice-500 fill-current" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
               ))}
             </div>
 
-            <p className="text-brand-100/80 text-lg lg:text-xl leading-relaxed font-light mb-6 relative z-10">
+            <p className="text-slate-700 text-lg lg:text-xl leading-relaxed font-light mb-6 relative z-10">
               {reviews[active].text}
             </p>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-gold-gradient flex items-center justify-center font-bold text-dark-900 text-sm">
+              <div className="w-12 h-12 rounded-full bg-gold-gradient flex items-center justify-center font-bold text-white text-sm">
                 {reviews[active].avatar}
               </div>
               <div>
-                <p className="text-white font-semibold">{reviews[active].name}</p>
-                <p className="text-brand-400/50 text-sm">{reviews[active].location} · {reviews[active].date}</p>
+                <p className="text-slate-800 font-semibold">{reviews[active].name}</p>
+                <p className="text-slate-400 text-sm">{reviews[active].location} · {reviews[active].date}</p>
               </div>
               {reviews[active].verified && (
                 <div className="ml-auto badge-premium px-3 py-1 rounded-full">
-                  <span className="text-herbal-400 text-xs font-semibold">✓ Verified</span>
+                  <span className="text-herbal-700 text-xs font-semibold">✓ Verified</span>
                 </div>
               )}
             </div>
@@ -108,11 +111,11 @@ const Testimonials = () => {
               onClick={() => setActive(i)}
               className={`flex items-center gap-3 px-5 py-3 rounded-2xl transition-all duration-300 ${
                 active === i
-                  ? 'bg-gold-gradient text-dark-900 shadow-[0_0_20px_rgba(228,162,58,0.4)] scale-105'
-                  : 'glass-card text-brand-200/60 hover:glass-card-warm'
+                  ? 'bg-gold-gradient text-white shadow-[0_0_20px_rgba(200,134,30,0.35)] scale-105'
+                  : 'glass-card text-slate-600 hover:text-brand-600'
               }`}
             >
-              <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs ${active === i ? 'bg-dark-900/20 text-dark-900' : 'bg-brand-700/30 text-brand-300'}`}>
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs ${active === i ? 'bg-white/20 text-white' : 'bg-ivory-200 text-slate-700'}`}>
                 {r.avatar}
               </div>
               <span className="text-sm font-medium hidden sm:block">{r.name}</span>
@@ -121,16 +124,17 @@ const Testimonials = () => {
         </div>
 
         {/* Overall rating */}
-        <div className="text-center glass-card rounded-2xl py-6 px-8 max-w-sm mx-auto">
+        <div className="text-center glass-card rounded-2xl py-6 px-8 max-w-sm mx-auto"
+          style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.07)' }}>
           <div className="font-serif text-5xl font-black text-gradient-gold mb-2">4.9</div>
           <div className="flex justify-center gap-1 mb-2">
             {[...Array(5)].map((_, i) => (
-              <svg key={i} className="w-4 h-4 text-spice-400 fill-current" viewBox="0 0 20 20">
+              <svg key={i} className="w-4 h-4 text-spice-500 fill-current" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
             ))}
           </div>
-          <p className="text-brand-300/50 text-xs">Based on 200+ verified reviews</p>
+          <p className="text-slate-400 text-xs">Based on 200+ verified reviews</p>
         </div>
       </div>
     </section>
