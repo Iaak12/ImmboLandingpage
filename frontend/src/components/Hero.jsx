@@ -84,17 +84,29 @@ const Hero = () => {
 
               {/* Product image */}
               <div className="relative z-10 animate-float">
-                <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden flex items-center justify-center p-4 glow-gold"
+                <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl relative overflow-hidden flex items-center justify-center p-4 glow-gold group"
                   style={{
                     background: 'rgba(255,255,255,0.75)',
                     backdropFilter: 'blur(20px)',
                     border: '1.5px solid rgba(255,255,255,0.95)',
                     boxShadow: '0 20px 60px rgba(0,0,0,0.10), 0 4px 16px rgba(0,0,0,0.06)'
                   }}>
+                  
+                  {/* Sugandhit Chai (Background) */}
                   <img
                     src="/herbal-peya.png"
-                    alt="Immbo & Sugandhit Chai Combo"
-                    className="w-full h-full object-contain drop-shadow-2xl"
+                    alt="Sugandhit Chai"
+                    className="absolute w-[60%] h-[60%] object-contain drop-shadow-xl transition-all duration-700 ease-out group-hover:scale-105 group-hover:-translate-y-2 group-hover:translate-x-2"
+                    style={{ right: '5%', top: '8%', transform: 'rotate(10deg)' }}
+                    loading="eager"
+                  />
+
+                  {/* Immbo (Foreground focus) */}
+                  <img
+                    src="https://immbo.in/wp-content/uploads/2025/10/IMMBO-100-Ayurvedic-by-Bharat-Bhaishajya-Shala.png"
+                    alt="Immbo Single Pack"
+                    className="absolute w-[75%] h-[75%] object-contain drop-shadow-2xl z-10 transition-all duration-700 ease-out group-hover:scale-105 group-hover:translate-y-1 group-hover:-translate-x-1"
+                    style={{ left: '0%', bottom: '2%', transform: 'rotate(-4deg)' }}
                     loading="eager"
                   />
                 </div>
