@@ -45,7 +45,7 @@ const Navbar = ({ scrollY }) => {
               href="#order"
               className="relative px-6 py-2.5 rounded-full bg-gold-gradient text-white font-bold text-sm tracking-wide transition-all duration-300 hover:shadow-[0_0_25px_rgba(200,134,30,0.45)] hover:scale-105 active:scale-95"
             >
-              Order Now — ₹125
+              Order Now — ₹289
             </a>
           </div>
 
@@ -79,7 +79,7 @@ const Navbar = ({ scrollY }) => {
               onClick={() => setMenuOpen(false)}
               className="block text-center py-3 px-6 rounded-full bg-gold-gradient text-white font-bold text-sm mt-2"
             >
-              Order Now — ₹125
+              Order Now — ₹289
             </a>
           </div>
         </div>

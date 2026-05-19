@@ -93,7 +93,7 @@ const Hero = () => {
                   }}>
                   <img
                     src="/herbal-peya.png"
-                    alt="Herbal Peya - Sugandhit Chai by Immbo"
+                    alt="Immbo & Sugandhit Chai Combo"
                     className="w-full h-full object-contain drop-shadow-2xl"
                     loading="eager"
                   />
@@ -101,8 +101,8 @@ const Hero = () => {
 
                 {/* Badges */}
                 <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-gold-gradient flex flex-col items-center justify-center shadow-2xl glow-gold-sm animate-bounce-slow">
-                  <span className="text-white font-black text-lg leading-none">25</span>
-                  <span className="text-white/90 font-bold text-[10px] leading-none">CUPS</span>
+                  <span className="text-white font-black text-lg leading-none">2</span>
+                  <span className="text-white/90 font-bold text-[10px] leading-none">ITEMS</span>
                 </div>
 
                 <div className="absolute -bottom-3 -left-4 badge-premium px-4 py-2 rounded-full"
@@ -123,22 +123,20 @@ const Hero = () => {
 
             {/* Headline */}
             <div>
-              <p className="font-devanagari text-brand-500/80 text-2xl sm:text-3xl font-semibold mb-1">सुगंधित चाय</p>
+              <p className="font-devanagari text-brand-500/80 text-2xl sm:text-3xl font-semibold mb-1">इम्बो और सुगंधित चाय</p>
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-gradient-gold">Herbal</span>
+                <span className="text-gradient-gold">Immbo</span>
                 <br />
-                <span className="text-slate-900">Peya</span>
+                <span className="text-slate-900">Combo</span>
               </h1>
-              <p className="text-brand-500/70 text-sm tracking-widest uppercase mt-2 font-medium">Formally known as Sugandhit Chai</p>
+              <p className="text-brand-500/70 text-sm tracking-widest uppercase mt-2 font-medium">Immbo + Sugandhit Chai</p>
             </div>
 
             <div className="divider-light" />
 
             {/* Description */}
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-light">
-              An aromatic tea blend infused with{' '}
-              <span className="text-brand-600 font-medium">fragrant spices</span> — a time-honoured
-              Ayurvedic recipe crafted to soothe, refresh and fortify your senses with every sip.
+              Experience the ultimate Ayurvedic synergy. This combo pairs <span className="text-brand-600 font-medium">Immbo</span> (Single Pack) for comprehensive well-being with our aromatic <span className="text-brand-600 font-medium">Sugandhit Chai (25g)</span> to soothe and refresh your senses.
             </p>
 
             {/* Stars & Net Weight */}
@@ -152,14 +150,14 @@ const Hero = () => {
                 <span className="text-slate-500 text-sm ml-1">(4.9)</span>
               </div>
               <span className="text-ivory-400">|</span>
-              <span className="text-slate-500 text-sm">Net Weight: <strong className="text-slate-700">25g</strong> (25 Servings)</span>
+              <span className="text-slate-500 text-sm">Contents: <strong className="text-slate-700">Immbo Pack + 25g Chai</strong></span>
             </div>
 
             {/* Price */}
             <div className="flex items-baseline gap-3">
-              <span className="text-5xl font-black text-gradient-gold font-serif">₹125</span>
-              <span className="text-slate-400 text-sm line-through">₹180</span>
-              <span className="text-herbal-700 text-xs font-bold px-3 py-1 rounded-full" style={{ background: 'rgba(22,163,74,0.10)', border: '1px solid rgba(22,163,74,0.25)' }}>Save 31%</span>
+              <span className="text-5xl font-black text-gradient-gold font-serif">₹289</span>
+              <span className="text-slate-400 text-sm line-through">₹345</span>
+              <span className="text-herbal-700 text-xs font-bold px-3 py-1 rounded-full" style={{ background: 'rgba(22,163,74,0.10)', border: '1px solid rgba(22,163,74,0.25)' }}>Save 16%</span>
             </div>
             <p className="text-slate-400 text-xs -mt-4">Inclusive of all taxes (GST)</p>
 
@@ -190,7 +188,7 @@ const Hero = () => {
                   <span className="flex items-center gap-2">✓ Added!</span>
                 ) : (
                   <>
-                    <span className="relative z-10">Add to Cart — ₹{125 * qty}</span>
+                    <span className="relative z-10">Add to Cart — ₹{289 * qty}</span>
                     <div className="absolute inset-0 shimmer-bg" />
                   </>
                 )}

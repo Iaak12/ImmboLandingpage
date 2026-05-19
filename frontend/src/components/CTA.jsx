@@ -52,15 +52,15 @@ const CTA = () => {
           <div className="relative z-10">
             <div className="flex items-center justify-between mb-6">
               <div className="text-left">
-                <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Price per Pack</p>
+                <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Combo Price</p>
                 <div className="flex items-baseline gap-2">
-                  <span className="font-serif text-4xl font-black text-gradient-gold">₹125</span>
-                  <span className="text-slate-600 text-sm line-through">₹180</span>
+                  <span className="font-serif text-4xl font-black text-gradient-gold">₹289</span>
+                  <span className="text-slate-600 text-sm line-through">₹345</span>
                 </div>
-                <p className="text-slate-500 text-xs">25 Servings Included</p>
+                <p className="text-slate-500 text-xs">Immbo + 25g Chai Included</p>
               </div>
               <div className="badge-premium-dark rounded-2xl px-4 py-3 text-center">
-                <p className="text-herbal-400 font-black text-2xl leading-none">31%</p>
+                <p className="text-herbal-400 font-black text-2xl leading-none">16%</p>
                 <p className="text-herbal-400/70 text-[10px] uppercase tracking-wider">OFF</p>
               </div>
             </div>
@@ -76,7 +76,7 @@ const CTA = () => {
               </div>
               <div className="text-right">
                 <p className="text-slate-500 text-xs">Total</p>
-                <p className="font-serif text-2xl font-bold text-white">₹{125 * qty}</p>
+                <p className="font-serif text-2xl font-bold text-white">₹{289 * qty}</p>
               </div>
             </div>
 
@@ -88,7 +88,7 @@ const CTA = () => {
                   : 'bg-gold-gradient text-white hover:shadow-[0_0_40px_rgba(200,134,30,0.60)] hover:scale-105 active:scale-95'
               }`}
             >
-              {added ? '✓ Order Confirmed! We\'ll be in touch.' : `Order Now — ₹${125 * qty}`}
+              {added ? '✓ Order Confirmed! We\'ll be in touch.' : `Order Now — ₹${289 * qty}`}
             </button>
 
             <p className="text-slate-600 text-xs mt-3">Secure checkout · Free returns · 100% Ayurvedic</p>

@@ -1,11 +1,11 @@
 import React from 'react';
 
 const details = [
-  { label: 'Product Name', value: 'Herbal Peya (25 Cups)', icon: '🍵' },
-  { label: 'Also Known As', value: 'Sugandhit Chai', icon: '📛' },
-  { label: 'Net Weight', value: '25 g', icon: '⚖️' },
-  { label: 'Servings', value: '25 cups per pack', icon: '☕' },
-  { label: 'MRP', value: '₹125/- (Incl. all taxes)', icon: '💰' },
+  { label: 'Product Name', value: 'Immbo & Sugandhit Chai Combo', icon: '🍵' },
+  { label: 'Main Focus', value: 'Immbo (Single Pack)', icon: '✨' },
+  { label: 'Contents', value: 'Immbo Pack + Chai 25g', icon: '⚖️' },
+  { label: 'Included', value: 'Sugandhit Chai (25 Cups)', icon: '☕' },
+  { label: 'Combo Price', value: '₹289/- (Incl. all taxes)', icon: '💰' },
   { label: 'Shelf Life', value: '24 months from MFG', icon: '📅' },
 ];
 
@@ -56,7 +56,7 @@ const ProductDetails = () => {
                   <div className="p-5 flex items-center justify-between">
                     <div>
                       <p className="text-slate-500 text-xs uppercase tracking-wider mb-1">Total Price</p>
-                      <p className="font-serif text-3xl font-black text-gradient-gold">₹125</p>
+                      <p className="font-serif text-3xl font-black text-gradient-gold">₹289</p>
                       <p className="text-slate-400 text-xs mt-1">Inclusive of all taxes</p>
                     </div>
                     <div className="text-right">
@@ -80,13 +80,13 @@ const ProductDetails = () => {
                 ✦ What's Inside
               </span>
               <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-                <span className="text-slate-900">Premium</span>{' '}
-                <span className="text-gradient-gold">Blend</span>
+                <span className="text-slate-900">Ultimate</span>{' '}
+                <span className="text-gradient-gold">Synergy</span>
                 <br />
-                <span className="text-slate-800 text-3xl font-semibold">Crafted With Care</span>
+                <span className="text-slate-800 text-3xl font-semibold">For Your Wellness</span>
               </h2>
               <p className="text-slate-600 text-base leading-relaxed mb-6">
-                An aromatic tea blend infused with fragrant spices — <strong className="text-brand-600">Mace, Dry Ginger, Indian Madder</strong> (Rubia cordifolia), <strong className="text-brand-600">Black Pepper, Black Cardamom, Cinnamon, Betel Leaves, Malabar Nut Leaves</strong> (Adhatoda vasica), and <strong className="text-brand-600">Basil Leaves</strong> (Tulsi).
+                Our premium combo pairs the powerful health benefits of <strong className="text-brand-600">Immbo</strong> with our classic aromatic tea blend. The tea is infused with fragrant spices — <strong className="text-brand-600">Mace, Dry Ginger, Indian Madder</strong>, <strong className="text-brand-600">Black Pepper, Black Cardamom, Cinnamon, Betel Leaves, Malabar Nut Leaves</strong>, and <strong className="text-brand-600">Basil Leaves</strong>.
               </p>
             </div>
 

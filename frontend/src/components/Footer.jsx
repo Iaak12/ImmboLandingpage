@@ -29,8 +29,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
-              Herbal Peya (Sugandhit Chai) — a premium Ayurvedic tea blend from the house of Bharat Bhaisajya Shala,
-              crafted for daily wellness and aromatic indulgence.
+              Immbo & Sugandhit Chai Combo — a premium Ayurvedic wellness formulation from the house of Bharat Bhaisajya Shala,
+              crafted for daily health and aromatic indulgence.
             </p>
             <div className="flex items-center gap-3 pt-2">
               {[
