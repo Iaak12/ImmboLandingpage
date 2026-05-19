@@ -103,10 +103,10 @@ const Hero = () => {
 
                   {/* Immbo (Foreground focus) */}
                   <img
-                    src="https://immbo.in/wp-content/uploads/2025/10/IMMBO-100-Ayurvedic-by-Bharat-Bhaishajya-Shala.png"
+                    src="https://immbo.in/wp-content/uploads/2025/10/IMMBO-Product-Main-Image.webp"
                     alt="Immbo Single Pack"
-                    className="absolute w-[75%] h-[75%] object-contain drop-shadow-2xl z-10 transition-all duration-700 ease-out group-hover:scale-105 group-hover:translate-y-1 group-hover:-translate-x-1"
-                    style={{ left: '0%', bottom: '2%', transform: 'rotate(-4deg)' }}
+                    className="absolute w-[80%] h-[80%] object-contain drop-shadow-2xl z-10 transition-all duration-700 ease-out group-hover:scale-105 group-hover:translate-y-1 group-hover:-translate-x-1"
+                    style={{ left: '-5%', bottom: '-5%', transform: 'rotate(-2deg)' }}
                     loading="eager"
                   />
                 </div>
